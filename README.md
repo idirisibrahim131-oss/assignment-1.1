@@ -1,35 +1,38 @@
-a. Multiple print() Statements
+# Your Very First Python
+
+# a. Multiple print() statements
+
 print("All the world's a stage,")
 print("And all the men and women merely players:")
 print("They have their exits and their entrances;")
 print("And one man in his time plays many parts,")
 print("His acts being seven ages.")
-b. Single print() Statement
+
+
+# b. Single print() statement
+
 print("""All the world's a stage,
 And all the men and women merely players:
 They have their exits and their entrances;
 And one man in his time plays many parts,
 His acts being seven ages.""")
-c. Predict the Output
 
-The output will be:
 
-127.0.0.1
-d. Using flush=True and flush=False
+# c. Predict the Output
 
-flush=True can be used when you need the output to appear immediately. For example, it can be useful for a countdown or a program that shows live information.
+print("127", "0", "0", "1", sep=".")
 
-flush=False is the default and allows Python to wait before sending the output. This is normally fine when you don't need the output to appear immediately.
 
-Example:
+# d. Using flush=True and flush=False
 
+# flush=True makes the output appear immediately.
 print("Loading...", flush=True)
-e. Understanding flush
 
-The end argument can make print() output behave like flush=True when it is set to an empty string or another value that does not include a newline.
+# flush=False is the default.
+print("This uses flush=False.", flush=False)
 
-For example:
 
-print("Loading...", end="", flush=True)
+# e. Understanding flush
 
-The flush=True argument is what directly tells Python to flush the output immediately.
+# The flush=True argument forces the output to be displayed immediately.
+print("This message is flushed immediately.", flush=True)
